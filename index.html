@@ -11,9 +11,10 @@
            text-align: center;
             height: 400px;
             width: 1000px;
-            border: 1px solid black;
+            /* border: 1px solid black; */
             border-radius: 20px;
             background-color: aquamarine;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
         #text{
             
@@ -54,11 +55,11 @@
     <div class="container">
         <h1 id="text">Text Tool</h1>
         <input type="text" id="input" placeholder="Type any text">
-        <div id="result">Result : </div>
+        <p id="result"> </p>
 
         <div class="button_container">
 
-        <button class="btn">UPPERCASE</button>
+        <button class="btn" onclick="makeuppercase()">UPPERCASE</button>
         <BUtton class="btn">Lower case</BUtton>
         <button class="btn">Charecter count</button>
         <button class="btn">word count</button>
@@ -66,5 +67,15 @@
 
 
     </div>
+
+    <script>
+        function makeuppercase(){
+            const inputElement = document.getElementById("input")
+            const resultElement = document.getElementById("result")
+
+            resultElement.innerText= inputElement.value.toUpperCase()
+
+        }
+    </script>
 </body>
 </html>
