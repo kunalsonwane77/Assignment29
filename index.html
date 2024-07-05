@@ -4,8 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>text tool</title>
+    <style>
+        .container{
+            padding: 20px;
+            margin: 40px auto;
+           text-align: center;
+            height: 400px;
+            width: 1000px;
+            border: 1px solid black;
+            border-radius: 20px;
+            background-color: aquamarine;
+        }
+        #text{
+            
+        }
+        #input{
+            border-radius: 20px;
+           margin: auto;
+           height: 100px;
+           width: 700px;
+
+        }
+        .button_container{
+            display: flex;
+            justify-content: space-between;
+            margin: 30px auto;
+            height: 80px;
+            width: auto;
+            /* border: 1px solid black; */
+        }
+        #result{
+            font-size: 20px;
+            background-color: beige;
+            border-radius: 10px;
+            margin: 20px auto;
+            height: 80px;
+            width: 700px;
+            border: 1px solid black;
+        }
+        .btn{
+            background-color: azure;
+            width: 120px;
+            height: 50px;
+            border-radius: 20px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <h1 id="text">Text Tool</h1>
+        <input type="text" id="input" placeholder="Type any text">
+        <div id="result">Result : </div>
+
+        <div class="button_container">
+
+        <button class="btn">UPPERCASE</button>
+        <BUtton class="btn">Lower case</BUtton>
+        <button class="btn">Charecter count</button>
+        <button class="btn">word count</button>
+      </div>
+
+
+    </div>
 </body>
 </html>
