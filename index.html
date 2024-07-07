@@ -61,8 +61,8 @@
 
         <button class="btn" onclick="makeuppercase()">UPPERCASE</button>
         <BUtton class="btn" onclick="makeLowercase()">Lower case</BUtton>
-        <button class="btn" onclick="charcount()">Charecter count</button>
-        <button class="btn">word count</button>
+        <button class="btn" onclick="charCount()">Charecter count</button>
+        <button class="btn" onclick="wordcount()">word count</button>
       </div>
 
 
@@ -81,6 +81,20 @@
             const resultElement = document.getElementById("result")
 
             resultElement.innerText= inputElement.value.toLowerCase()
+
+        }
+        function charCount(){
+            const inputElement = document.getElementById("input")
+            const resultElement = document.getElementById("result")
+
+            resultElement.innerText= `Total Charecter equal to :  ${inputElement.value.length}`
+
+        }
+        function wordcount(){
+            const inputElement = document.getElementById("input")
+            const resultElement = document.getElementById("result")
+
+            resultElement.innerText= inputElement.value.split(" ").length
 
         }
        
